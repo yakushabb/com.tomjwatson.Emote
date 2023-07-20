@@ -63,4 +63,4 @@ modules:
     sources:
       - type: git
         url: "https://github.com/tom-james-watson/Emote"
-        commit: 33723d36b3c11d858287bca090d67cae36fa0081
+        commit: 054bbb54862afa5c10f3403fd330dce620b943b4
