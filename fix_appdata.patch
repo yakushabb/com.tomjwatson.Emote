@@ -1,0 +1,36 @@
+From f4a35627b6fdccbed1ba0e4b2c89cdfcc804e638 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Tue, 4 Jun 2024 21:08:01 +0300
+Subject: [PATCH] appdata: Update appdata
+
+Fix some papercuts
+---
+ flatpak/com.tomjwatson.Emote.metainfo.xml | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+diff --git a/flatpak/com.tomjwatson.Emote.metainfo.xml b/flatpak/com.tomjwatson.Emote.metainfo.xml
+index 7f0cd90..5580304 100644
+--- a/flatpak/com.tomjwatson.Emote.metainfo.xml
++++ b/flatpak/com.tomjwatson.Emote.metainfo.xml
+@@ -36,7 +36,7 @@
+       ⚡️ Emote shows up faster when invoked using the built-in keyboard shortcut (`Ctrl+Alt+E` by default), than when using a manually registered keyboard shortcut.
+     </p>
+     <p>
+-      🪟 Emote under Wayland cannot automatically paste the emoji into other apps, and also requires manual registering of a global keyboard shortcut - <a href="https://github.com/tom-james-watson/Emote/wiki/Hotkey-In-Wayland" target="_blank">Hotkey In Wayland</a>. This is due to intentional restrictions in the design of Wayland itself.
++      🪟 Emote under Wayland cannot automatically paste the emoji into other apps, and also requires manual registering of a global keyboard shortcut - (Hotkey In Wayland - github.com/tom-james-watson/Emote/wiki/Hotkey-In-Wayland). This is due to intentional restrictions in the design of Wayland itself.
+     </p>
+   </description>
+ 
+@@ -71,8 +71,7 @@
+     <control>pointing</control>
+     <control>keyboard</control>
+     <control>touch</control>
+-    <display_length compare="ge">small</display_length>
+-    <display_length compare="le">xlarge</display_length>
++    <display_length compare="ge">512</display_length>
+   </supports>
+   <!-- https://hughsie.github.io/oars/generate.html -->
+   <content_rating type="oars-1.1" />
+--
+libgit2 1.7.2
+
